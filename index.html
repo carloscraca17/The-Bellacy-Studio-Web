@@ -46,7 +46,6 @@
         .img-container { overflow: hidden; border-radius: 0.75rem; aspect-ratio: 1/1; border: 1px solid rgba(212, 175, 55, 0.2); }
         .img-container img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
-        /* Fondo de inicio IMGBB */
         #inicio { background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(20, 16, 5, 0.95)), url('https://i.ibb.co/G4pFGF66/IMG-4508.jpg'); background-size: cover; background-position: center; }
 
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
@@ -61,7 +60,6 @@
         details[open] summary ~ * { animation: sweep .4s ease-in-out; }
         @keyframes sweep { 0% {opacity: 0; transform: translateY(-10px)} 100% {opacity: 1; transform: translateY(0)} }
 
-        /* Botones Flotantes */
         .whatsapp-float { position: fixed; width: 55px; height: 55px; bottom: 30px; right: 30px; background-color: #D4AF37; color: #000; border-radius: 50px; text-align: center; font-size: 30px; z-index: 1000; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; animation: pulse-gold 2s infinite; }
         .whatsapp-float:hover { transform: scale(1.1); background-color: #b5952f; }
         @keyframes pulse-gold { 0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); } 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); } }
@@ -74,7 +72,6 @@
             .booking-float { height: 50px; bottom: 20px; right: 80px; font-size: 10px; padding: 0 15px; }
         }
 
-        /* Efecto Minimalista Serenidad */
         .crossfade-container { position: relative; width: 100%; aspect-ratio: 4/5; overflow: hidden; border-radius: 0.75rem; }
         .crossfade-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; animation: crossfade-anim 20s infinite; filter: grayscale(100%); transition: filter 0.5s ease; }
         .crossfade-container:hover .crossfade-img { filter: grayscale(0%); }
@@ -136,29 +133,24 @@
                 <i class="fas fa-spa"></i> Nuestros Servicios
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
                 <div class="glass-card p-8 rounded-xl h-fit">
                     <h3 class="text-xl mb-6 gold-text uppercase border-b border-zinc-800 pb-3">Esenciales</h3>
                     <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Manicure Semipermanente</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$27.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Esmaltado de larga duración que se seca en cabina UV/LED para un brillo impecable.</p></details>
                     <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Manicure Tradicional</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$25.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Limpieza profunda de cutículas, limado y esmaltado clásico de alta calidad.</p></details>
                     <details class="group"><summary class="flex justify-between items-center"><span>Manicure sin Esmaltado</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$20.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Limpieza, preparación y cuidado impecable de cutículas y uñas naturales, sin aplicación de color.</p></details>
                 </div>
-                
                 <div class="glass-card p-8 rounded-xl h-fit">
                     <h3 class="text-xl mb-6 gold-text uppercase border-b border-zinc-800 pb-3">Estructura</h3>
                     <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Kapping</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$30.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Capa protectora de gel sobre uña natural para dar fuerza y evitar quiebres.</p></details>
                     <details class="group"><summary class="flex justify-between items-center"><span>Belleza de Pies</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$27.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Tratamiento integral que incluye spa, exfoliación profunda y esmaltado impecable.</p></details>
                 </div>
-                
                 <div class="glass-card p-8 rounded-xl h-fit">
                     <h3 class="text-xl mb-6 gold-text uppercase border-b border-zinc-800 pb-3">Premium</h3>
                     <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Polygel</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$38.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Combinación de acrílico y gel para extensiones súper resistentes y livianas.</p></details>
                     <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Soft Gel</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$35.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Sistema de extensiones ultra naturales y rápidas de aplicar.</p></details>
                     <details class="group"><summary class="flex justify-between items-center"><span>Manicure Esculpidas en Gel</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$38.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Construcción artesanal con molde y gel para lograr un largo, curvatura y forma 100% personalizados.</p></details>
                 </div>
-                
             </div>
-            
             <div class="mt-12 glass-card p-6 rounded-xl max-w-2xl mx-auto">
                 <h3 class="text-sm gold-text mb-4 uppercase font-bold tracking-widest text-center">Adicionales & Complementos</h3>
                 <div class="flex flex-col md:flex-row justify-around gap-6 text-sm text-gray-300">
@@ -173,7 +165,6 @@
         <div class="absolute inset-0 z-0 bg-[#080705]">
             <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#1a1710] via-black to-black opacity-80"></div>
         </div>
-
         <div class="max-w-6xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div class="w-full md:w-3/5">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#D4AF37] text-[10px] uppercase tracking-widest font-bold mb-6">
@@ -185,7 +176,6 @@
                 <p class="text-gray-300 font-light text-sm md:text-base leading-relaxed mb-8 max-w-xl">
                     Una experiencia premium de estética y bienestar diseñada exclusivamente para adultos mayores, en la comodidad de su hogar. Transformamos la manicuría y pedicuría tradicional en un ritual de cuidado, respeto y conexión.
                 </p>
-
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-home gold-text text-xl mt-1"></i>
@@ -204,7 +194,6 @@
                         <div><h4 class="text-white font-medium text-sm mb-1">Cuidado Seguro</h4><p class="text-gray-400 text-xs">Uso de productos hipoalergénicos de alta tolerancia.</p></div>
                     </div>
                 </div>
-
                 <div class="flex flex-wrap gap-4 mt-2">
                     <a href="https://drive.google.com/file/d/1eXtu06iJ6YiV1wMBwxORa-Ezi4cBTJeV/view?usp=drivesdk" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-18077176899/vAuWCPbZ1JwcEMOo76tD'});" class="gold-bg text-black px-6 py-4 rounded-sm font-bold uppercase tracking-widest text-xs shadow-xl hover:bg-yellow-600 transition inline-flex items-center gap-3">
                         <i class="fas fa-file-alt text-lg"></i> Ver propuesta
@@ -214,15 +203,14 @@
                     </a>
                 </div>
             </div>
-
             <div class="w-full md:w-2/5">
                 <div class="glass-card p-4 rounded-2xl relative">
                     <div class="absolute -inset-1 bg-gradient-to-r from-[#D4AF37] to-yellow-600 rounded-2xl blur opacity-20"></div>
                     <div class="crossfade-container relative rounded-xl w-full aspect-[4/5] overflow-hidden">
-                        <img src="https://i.ibb.co/XZRW2nsp/pexels-cottonbro-4661281.jpg" alt="Proyecto Serenidad 1" class="crossfade-img">
-                        <img src="https://i.ibb.co/ymH5Jvtr/pexels-cottonbro-4661289.jpg" alt="Proyecto Serenidad 2" class="crossfade-img">
-                        <img src="https://i.ibb.co/Gv7BLYVP/pexels-dino-81840072-9054444.jpg" alt="Proyecto Serenidad 3" class="crossfade-img">
-                        <img src="https://i.ibb.co/GfGCMvMT/pexels-jonathanborba-19695948.jpg" alt="Proyecto Serenidad 4" class="crossfade-img">
+                        <img src="https://i.ibb.co/XZRW2nsp/pexels-cottonbro-4661281.jpg" alt="Cuidado 1" class="crossfade-img">
+                        <img src="https://i.ibb.co/ymH5Jvtr/pexels-cottonbro-4661289.jpg" alt="Cuidado 2" class="crossfade-img">
+                        <img src="https://i.ibb.co/Gv7BLYVP/pexels-dino-81840072-9054444.jpg" alt="Cuidado 3" class="crossfade-img">
+                        <img src="https://i.ibb.co/GfGCMvMT/pexels-jonathanborba-19695948.jpg" alt="Cuidado 4" class="crossfade-img">
                     </div>
                 </div>
             </div>
@@ -235,16 +223,16 @@
         </h2>
         <div class="marquee-wrapper" id="gallery-wrapper">
             <div class="marquee-container" id="gallery-content">
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/gbdSz7Fm/esculpidas-en-gel-jpg.png" alt="Galería 1"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/VY0JsPJT/pedicure-2.png" alt="Galería 2"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/d4rbKpHB/pedicure-3.png" alt="Galería 3"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/pBHdR6v5/pedicure-4.png" alt="Galería 4"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/C56YWQxk/pedicure.png" alt="Galería 5"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/vvQQFX4h/polygel-1.png" alt="Galería 6"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/NndZ9ZsF/polygel-2.png" alt="Galería 7"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/PsVX8XKB/polygel-3.png" alt="Galería 8"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/DPcSTz9X/polygel-4.png" alt="Galería 9"></div>
-                <div class="marquee-item img-container"><img src="https://i.ibb.co/8nPmghCV/polygel-5.png" alt="Galería 10"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/gbdSz7Fm/esculpidas-en-gel-jpg.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/VY0JsPJT/pedicure-2.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/d4rbKpHB/pedicure-3.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/pBHdR6v5/pedicure-4.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/C56YWQxk/pedicure.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/vvQQFX4h/polygel-1.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/NndZ9ZsF/polygel-2.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/PsVX8XKB/polygel-3.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/DPcSTz9X/polygel-4.png"></div>
+                <div class="marquee-item img-container"><img src="https://i.ibb.co/8nPmghCV/polygel-5.png"></div>
             </div>
         </div>
     </section>
@@ -280,52 +268,18 @@
                 </a>
             </div>
         </div>
-
         <div class="marquee-wrapper mb-12" id="shop-wrapper">
             <div class="marquee-container" id="shop-content">
-                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center">
-                    <div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center">
-                        <img src="https://i.ibb.co/YB044NG9/D-NQ-NP-2-X-643979-MLA74782356789-022024-F.webp" alt="Producto 1" class="max-w-full max-h-full object-contain drop-shadow-md">
-                    </div>
-                </div>
-                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center">
-                    <div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center">
-                        <img src="https://i.ibb.co/ynKztBWJ/D-NQ-NP-2-X-810371-MLA109293883921-032026-F.webp" alt="Producto 2" class="max-w-full max-h-full object-contain drop-shadow-md">
-                    </div>
-                </div>
-                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center">
-                    <div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center">
-                        <img src="https://i.ibb.co/679wN6XK/D-NQ-NP-2-X-871741-MLA100346924616-122025-F.webp" alt="Producto 3" class="max-w-full max-h-full object-contain drop-shadow-md">
-                    </div>
-                </div>
-                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center">
-                    <div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center">
-                        <img src="https://i.ibb.co/Q7yMygRm/D-NQ-NP-2-X-617197-MLA109285047771-032026-F.webp" alt="Producto 4" class="max-w-full max-h-full object-contain drop-shadow-md">
-                    </div>
-                </div>
-                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center">
-                    <div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center">
-                        <img src="https://i.ibb.co/qMjB4Q30/D-NQ-NP-2-X-846550-MLA89274980644-082025-F.webp" alt="Producto 5" class="max-w-full max-h-full object-contain drop-shadow-md">
-                    </div>
-                </div>
-                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center">
-                    <div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center">
-                        <img src="https://i.ibb.co/HpXGL49G/D-NQ-NP-2-X-903635-MLA109291028455-032026-F.webp" alt="Producto 6" class="max-w-full max-h-full object-contain drop-shadow-md">
-                    </div>
-                </div>
-                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center">
-                    <div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center">
-                        <img src="https://i.ibb.co/GZwyYy5/D-NQ-NP-2-X-906489-MLA102760964902-122025-F.webp" alt="Producto 7" class="max-w-full max-h-full object-contain drop-shadow-md">
-                    </div>
-                </div>
-                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center">
-                    <div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center">
-                        <img src="https://i.ibb.co/N2hXHMn6/D-NQ-NP-2-X-908943-MLA84549286204-052025-F.webp" alt="Producto 8" class="max-w-full max-h-full object-contain drop-shadow-md">
-                    </div>
-                </div>
+                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center"><div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center"><img src="https://i.ibb.co/YB044NG9/D-NQ-NP-2-X-643979-MLA74782356789-022024-F.webp" class="max-w-full max-h-full object-contain drop-shadow-md"></div></div>
+                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center"><div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center"><img src="https://i.ibb.co/ynKztBWJ/D-NQ-NP-2-X-810371-MLA109293883921-032026-F.webp" class="max-w-full max-h-full object-contain drop-shadow-md"></div></div>
+                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center"><div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center"><img src="https://i.ibb.co/679wN6XK/D-NQ-NP-2-X-871741-MLA100346924616-122025-F.webp" class="max-w-full max-h-full object-contain drop-shadow-md"></div></div>
+                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center"><div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center"><img src="https://i.ibb.co/Q7yMygRm/D-NQ-NP-2-X-617197-MLA109285047771-032026-F.webp" class="max-w-full max-h-full object-contain drop-shadow-md"></div></div>
+                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center"><div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center"><img src="https://i.ibb.co/qMjB4Q30/D-NQ-NP-2-X-846550-MLA89274980644-082025-F.webp" class="max-w-full max-h-full object-contain drop-shadow-md"></div></div>
+                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center"><div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center"><img src="https://i.ibb.co/HpXGL49G/D-NQ-NP-2-X-903635-MLA109291028455-032026-F.webp" class="max-w-full max-h-full object-contain drop-shadow-md"></div></div>
+                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center"><div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center"><img src="https://i.ibb.co/GZwyYy5/D-NQ-NP-2-X-906489-MLA102760964902-122025-F.webp" class="max-w-full max-h-full object-contain drop-shadow-md"></div></div>
+                <div class="marquee-item glass-card p-4 rounded-xl bg-white/5 h-[300px] w-[250px] flex items-center justify-center"><div class="bg-white w-full h-full rounded-lg p-3 flex items-center justify-center"><img src="https://i.ibb.co/N2hXHMn6/D-NQ-NP-2-X-908943-MLA84549286204-052025-F.webp" class="max-w-full max-h-full object-contain drop-shadow-md"></div></div>
             </div>
         </div>
-
         <div class="text-center px-4">
             <a href="https://www.mercadolibre.com.ar/pagina/thebellacyshop#from=share_eshop" target="_blank" class="gold-bg text-black px-10 py-4 rounded-sm font-bold uppercase tracking-widest text-xs shadow-xl hover:bg-yellow-600 transition inline-flex items-center gap-3">
                 Visitar Tienda Oficial en Mercado Libre <i class="fas fa-external-link-alt"></i>
@@ -367,24 +321,21 @@
         </h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-10">
             <a href="https://www.instagram.com/bellacystudio/" target="_blank" class="group relative overflow-hidden rounded-xl aspect-square border border-zinc-800">
-                <img src="https://i.ibb.co/GQGYR2b1/IMG-4279.jpg" alt="Instagram 1" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110">
+                <img src="https://i.ibb.co/GQGYR2b1/IMG-4279.jpg" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fab fa-instagram text-3xl md:text-4xl gold-text"></i></div>
             </a>
             <a href="https://www.instagram.com/bellacystudio/" target="_blank" class="group relative overflow-hidden rounded-xl aspect-square border border-zinc-800">
-                <img src="https://i.ibb.co/7dkmTNKY/IMG-4362.jpg" alt="Instagram 2" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110">
+                <img src="https://i.ibb.co/7dkmTNKY/IMG-4362.jpg" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fab fa-instagram text-3xl md:text-4xl gold-text"></i></div>
             </a>
             <a href="https://www.instagram.com/bellacystudio/" target="_blank" class="group relative overflow-hidden rounded-xl aspect-square border border-zinc-800">
-                <img src="https://i.ibb.co/GQkQ4MKN/IMG-4380.png" alt="Instagram 3" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110">
+                <img src="https://i.ibb.co/GQkQ4MKN/IMG-4380.png" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fab fa-instagram text-3xl md:text-4xl gold-text"></i></div>
             </a>
             <a href="https://www.instagram.com/bellacystudio/" target="_blank" class="group relative overflow-hidden rounded-xl aspect-square border border-zinc-800">
-                <img src="https://i.ibb.co/Q7j2GMdB/IMG-4460.png" alt="Instagram 4" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110">
+                <img src="https://i.ibb.co/Q7j2GMdB/IMG-4460.png" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fab fa-instagram text-3xl md:text-4xl gold-text"></i></div>
             </a>
-        </div>
-        <div class="text-center mt-8">
-            <a href="https://www.instagram.com/bellacystudio/" target="_blank" class="inline-block border border-[#D4AF37] text-[#D4AF37] px-10 py-3 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-[#D4AF37] hover:text-black transition">Seguinos en @bellacystudio</a>
         </div>
     </section>
 
@@ -395,15 +346,15 @@
         <div class="glass-card p-6 md:p-10 rounded-xl space-y-4">
             <details class="group border-b border-zinc-800 pb-4">
                 <summary class="flex justify-between items-center outline-none cursor-pointer"><span class="font-medium text-gray-200">¿Cuál es la diferencia entre Soft Gel y Esculpidas?</span><i class="fas fa-chevron-down arrow-icon ml-4"></i></summary>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed pl-2 border-l-2 border-[#D4AF37]">El <strong>Soft Gel</strong> utiliza tips pre-moldeados adheridos a la uña. Las <strong>Esculpidas</strong> se construyen artesanalmente con molde y gel para un largo y forma personalizados.</p>
+                <p class="text-sm text-gray-400 mt-4 leading-relaxed pl-2 border-l-2 border-[#D4AF37]">El Soft Gel utiliza tips pre-moldeados adheridos a la uña. Las Esculpidas se construyen artesanalmente para un largo y forma personalizados.</p>
             </details>
             <details class="group border-b border-zinc-800 pb-4">
                 <summary class="flex justify-between items-center outline-none cursor-pointer"><span class="font-medium text-gray-200">¿Se debe abonar una seña para confirmar el turno?</span><i class="fas fa-chevron-down arrow-icon ml-4"></i></summary>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed pl-2 border-l-2 border-[#D4AF37]">Sí, para confirmar se abona una seña de <strong>$10.000</strong>, la cual se descuenta del valor total el día del servicio.</p>
+                <p class="text-sm text-gray-400 mt-4 leading-relaxed pl-2 border-l-2 border-[#D4AF37]">Sí, para confirmar se abona una seña de $10.000, descontable del valor total del servicio.</p>
             </details>
             <details class="group">
                 <summary class="flex justify-between items-center outline-none cursor-pointer"><span class="font-medium text-gray-200">¿Cuáles son los medios de pago?</span><i class="fas fa-chevron-down arrow-icon ml-4"></i></summary>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed pl-2 border-l-2 border-[#D4AF37]">Aceptamos <strong>efectivo, transferencia bancaria, tarjeta de débito y crédito</strong>.</p>
+                <p class="text-sm text-gray-400 mt-4 leading-relaxed pl-2 border-l-2 border-[#D4AF37]">Aceptamos efectivo, transferencia bancaria, tarjeta de débito y crédito.</p>
             </details>
         </div>
     </section>
@@ -415,14 +366,14 @@
                 <div class="space-y-6">
                     <div>
                         <p class="flex items-start gap-4 text-gray-300"><i class="fas fa-map-marker-alt gold-text text-xl mt-1"></i><span>Nuñez 2476 Piso 8, C1429 Cdad. Autónoma de Buenos Aires</span></p>
-                        <a href="https://maps.app.goo.gl/0" target="_blank" class="mt-4 ml-9 inline-block border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm font-bold uppercase tracking-widest text-[10px] hover:bg-[#D4AF37] hover:text-black transition">Cómo llegar</a>
+                        <a href="http://googleusercontent.com/maps.google.com/4" target="_blank" class="mt-4 ml-9 inline-block border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm font-bold uppercase tracking-widest text-[10px] hover:bg-[#D4AF37] hover:text-black transition">Cómo llegar</a>
                     </div>
                     <a href="https://wa.me/5491131495284" target="_blank" class="flex items-center gap-4 hover:text-[#D4AF37] transition"><i class="fas fa-phone gold-text text-xl"></i> +54 9 11 3149-5284</a>
                     <p class="flex items-center gap-4 text-gray-300"><i class="far fa-clock gold-text text-xl"></i> Lun a Dom: 9:00 a 20:00 hs</p>
                 </div>
             </div>
             <div class="h-[300px] rounded-xl overflow-hidden border border-zinc-800">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.326294520743!2d-58.46820542345091!3d-34.54528145441589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42055627705%3A0x67399426f43e5c93!2sAv.%20Cdor.%20Mart%C3%ADn%20Garc%C3%ADa%202476%2C%20C1429%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714256789456!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+                <iframe src="http://googleusercontent.com/maps.google.com/5" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -459,10 +410,6 @@
             { name: "Carolina Blanco", text: "Excelente servicio y atencion. Me encantó como quedaron mis manos y pies. 🤩…" },
             { name: "Cande Bernis", text: "Me encanto como me quedaron las uñas! Me hice manos y pies. Yei una genia super detallista." },
             { name: "Carmela Rodriguez", text: "Excelente trabajo! Me encanto como quedaron las uñas. Súper recomendable!" },
-            { name: "Camila Esposito", text: "Fue la primera vez que fui y me encantó! Las uñas quedaron re lindas, los productos de calidad." },
-            { name: "Monica Garcia", text: "Muy amable y atenta, me hizo muy bien las manos." },
-            { name: "Yalimar Gonzalez", text: "Ame mis uñistas 😮‍💨😍😍 excelente servicio y atención…" },
-            { name: "Cheluz Sarmiento", text: "Muy buena atención y el servicio de manicure de 10👍…" },
             { name: "Luciana Alfonzo", text: "Una genia Yei! Recomiendo por su amabilidad y delicadeza en el trabajo, mis uñas siempre están divinas." }
         ];
 
