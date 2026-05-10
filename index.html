@@ -81,6 +81,10 @@
         .crossfade-img:nth-child(3) { animation-delay: 10s; }
         .crossfade-img:nth-child(4) { animation-delay: 15s; }
         @keyframes crossfade-anim { 0% { opacity: 0; } 5% { opacity: 1; } 25% { opacity: 1; } 30% { opacity: 0; } 100% { opacity: 0; } }
+
+        /* Estilos Extra para la Sección de Turnos Potenciada */
+        .turno-gradient { background: radial-gradient(circle at center, rgba(212, 175, 55, 0.08) 0%, rgba(0,0,0,0) 70%); }
+        .step-number { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #D4AF37; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #D4AF37; margin-bottom: 8px; }
     </style>
 </head>
 <body>
@@ -129,11 +133,11 @@
     </header>
 
     <section id="servicios" class="py-20 px-4 md:px-6 reveal">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl text-center mb-16 gold-text uppercase tracking-widest flex items-center justify-center gap-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-2xl md:text-4xl mb-16 gold-text uppercase tracking-widest flex items-center justify-center gap-4">
                 <i class="fas fa-spa"></i> Nuestros Servicios
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
                 <div class="glass-card p-8 rounded-xl h-fit">
                     <h3 class="text-xl mb-6 gold-text uppercase border-b border-zinc-800 pb-3">Esenciales</h3>
                     <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Manicure Semipermanente</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$27.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Esmaltado de larga duración que se seca en cabina UV/LED para un brillo impecable.</p></details>
@@ -149,15 +153,21 @@
                     <h3 class="text-xl mb-6 gold-text uppercase border-b border-zinc-800 pb-3">Premium</h3>
                     <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Polygel</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$38.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Combinación de acrílico y gel para extensiones súper resistentes y livianas.</p></details>
                     <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Soft Gel</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$35.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Sistema de extensiones ultra naturales y rápidas de aplicar.</p></details>
+                    <details class="mb-4 group"><summary class="flex justify-between items-center"><span>Dipping</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$32.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Es la revolución que combina la durabilidad del acrílico con la practicidad de un esmaltado permanente.</p></details>
                     <details class="group"><summary class="flex justify-between items-center"><span>Manicure Esculpidas en Gel</span><div class="flex items-center gap-3"><span class="gold-text font-bold text-sm">$38.000</span><i class="fas fa-chevron-down arrow-icon"></i></div></summary><p class="text-xs text-gray-400 mt-3 leading-relaxed">Construcción artesanal con molde y gel para lograr un largo, curvatura y forma 100% personalizados.</p></details>
                 </div>
             </div>
+            
             <div class="mt-12 glass-card p-6 rounded-xl max-w-2xl mx-auto">
                 <h3 class="text-sm gold-text mb-4 uppercase font-bold tracking-widest text-center">Adicionales & Complementos</h3>
-                <div class="flex flex-col md:flex-row justify-around gap-6 text-sm text-gray-300">
-                    <p class="border-l border-zinc-700 pl-4">Reconstrucción de uña: <span class="gold-text font-bold">$3.000 c/u</span></p>
-                    <p class="border-l border-zinc-700 pl-4">Remoción (otro salón): <span class="gold-text font-bold">$5.000</span></p>
+                <div class="flex flex-col md:flex-row justify-around gap-6 text-sm text-gray-300 mb-6">
+                    <p class="border-l border-zinc-700 pl-4 text-left">Reconstrucción de uña: <span class="gold-text font-bold">$3.000 c/u</span></p>
+                    <p class="border-l border-zinc-700 pl-4 text-left">Remoción (otro salón): <span class="gold-text font-bold">$5.000</span></p>
                 </div>
+            </div>
+
+            <div class="mt-12">
+                <a href="#turno" class="gold-bg text-black px-12 py-4 rounded-sm font-bold uppercase tracking-widest text-xs shadow-xl hover:bg-yellow-600 transition inline-block">Agendá tu turno</a>
             </div>
         </div>
     </section>
@@ -238,18 +248,38 @@
         </div>
     </section>
 
-    <section id="turno" class="py-20 px-4 bg-black/40 border-y border-zinc-900 reveal text-center">
-        <div class="max-w-2xl mx-auto glass-card p-10 rounded-xl relative overflow-hidden">
-            <div class="absolute -inset-1 bg-gradient-to-r from-[#D4AF37] to-yellow-600 rounded-2xl blur opacity-10"></div>
+    <section id="turno" class="py-28 px-4 turno-gradient border-y border-zinc-900 reveal text-center">
+        <div class="max-w-4xl mx-auto glass-card p-8 md:p-14 rounded-[2rem] relative overflow-hidden">
+            <div class="absolute -inset-1 bg-gradient-to-r from-[#D4AF37] to-yellow-600 rounded-[2rem] blur opacity-5"></div>
             <div class="relative z-10">
-                <i class="far fa-calendar-check text-4xl gold-text mb-6"></i>
-                <h2 class="text-2xl md:text-3xl mb-4 gold-text uppercase tracking-widest">Portal de Reservas</h2>
-                <p class="text-gray-300 font-light mb-8 leading-relaxed text-sm md:text-base max-w-lg mx-auto">
-                    Hemos habilitado una nueva plataforma exclusiva para que puedas gestionar tus turnos de forma rápida y sencilla. Elegí tu servicio y asegurá tu lugar al instante.
+                <span class="text-[10px] md:text-xs gold-text uppercase tracking-[0.4em] mb-4 block font-bold">Reserva Online</span>
+                <h2 class="text-3xl md:text-5xl mb-6 text-white font-light tracking-tight">Agendá tu <span class="font-bold gold-text italic font-serif">Turno</span></h2>
+                <p class="text-gray-400 font-light mb-12 leading-relaxed text-sm md:text-lg max-w-xl mx-auto">
+                    Olvidate de esperar mensajes. Gestioná tu cita en tiempo real desde nuestra nueva plataforma inteligente.
                 </p>
-                <a href="https://the-bellacy-studio.vercel.app/" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-18077176899/vAuWCPbZ1JwcEMOo76tD'});" class="gold-bg text-black px-10 py-4 rounded-sm font-bold uppercase tracking-widest text-sm shadow-xl hover:bg-yellow-600 transition inline-flex items-center gap-3">
-                    Ingresar al Portal <i class="fas fa-external-link-alt"></i>
-                </a>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-3xl mx-auto">
+                    <div class="flex flex-col items-center">
+                        <div class="step-number">1</div>
+                        <p class="text-[11px] text-gray-300 uppercase tracking-widest">Elegí el servicio</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="step-number">2</div>
+                        <p class="text-[11px] text-gray-300 uppercase tracking-widest">Seleccioná fecha</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="step-number">3</div>
+                        <p class="text-[11px] text-gray-300 uppercase tracking-widest">Confirmación Instantánea</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-6">
+                    <a href="https://the-bellacy-studio.vercel.app/" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-18077176899/vAuWCPbZ1JwcEMOo76tD'});" class="gold-bg text-black px-12 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-xs shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:scale-105 transition-all duration-300 inline-flex items-center gap-3">
+                        Entrar al Portal <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <div class="flex gap-6 text-[10px] text-zinc-500 uppercase tracking-widest">
+                        <span class="flex items-center gap-2"><i class="fas fa-clock gold-text"></i> Disponible 24/7</span>
+                        <span class="flex items-center gap-2"><i class="fas fa-check-circle gold-text"></i> Sin Esperas</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -338,9 +368,6 @@
                 <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fab fa-instagram text-3xl md:text-4xl gold-text"></i></div>
             </a>
         </div>
-        <div class="text-center mt-8">
-            <a href="https://www.instagram.com/bellacystudio/" target="_blank" class="inline-block border border-[#D4AF37] text-[#D4AF37] px-10 py-3 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-[#D4AF37] hover:text-black transition">Seguinos en @bellacystudio</a>
-        </div>
     </section>
 
     <section id="faq" class="py-20 px-4 md:px-6 max-w-4xl mx-auto reveal border-t border-zinc-900/50">
@@ -350,7 +377,7 @@
         <div class="glass-card p-6 md:p-10 rounded-xl space-y-4">
             <details class="group border-b border-zinc-800 pb-4">
                 <summary class="flex justify-between items-center outline-none cursor-pointer"><span class="font-medium text-gray-200">¿Cuál es la diferencia entre Soft Gel y Esculpidas?</span><i class="fas fa-chevron-down arrow-icon ml-4"></i></summary>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed pl-2 border-l-2 border-[#D4AF37]">El <strong>Soft Gel</strong> utiliza tips pre-moldeados adheridos a la uña. Las <strong>Esculpidas</strong> se construyen artesanalmente para un largo y forma personalizados.</p>
+                <p class="text-sm text-gray-400 mt-4 leading-relaxed pl-2 border-l-2 border-[#D4AF37]">El Soft Gel utiliza tips pre-moldeados adheridos a la uña. Las Esculpidas se construyen artesanalmente para un largo y forma personalizados.</p>
             </details>
             <details class="group border-b border-zinc-800 pb-4">
                 <summary class="flex justify-between items-center outline-none cursor-pointer"><span class="font-medium text-gray-200">¿Se debe abonar una seña para confirmar el turno?</span><i class="fas fa-chevron-down arrow-icon ml-4"></i></summary>
@@ -414,10 +441,6 @@
             { name: "Carolina Blanco", text: "Excelente servicio y atencion. Me encantó como quedaron mis manos y pies. 🤩…" },
             { name: "Cande Bernis", text: "Me encanto como me quedaron las uñas! Me hice manos y pies. Yei una genia super detallista." },
             { name: "Carmela Rodriguez", text: "Excelente trabajo! Me encanto como quedaron las uñas. Súper recomendable!" },
-            { name: "Camila Esposito", text: "Fue la primera vez que fui y me encantó! Las uñas quedaron re lindas, los productos de calidad." },
-            { name: "Monica Garcia", text: "Muy amable y atenta, me hizo muy bien las manos." },
-            { name: "Yalimar Gonzalez", text: "Ame mis uñistas 😮‍💨😍😍 excelente servicio y atención…" },
-            { name: "Cheluz Sarmiento", text: "Muy buena atención y el servicio de manicure de 10👍…" },
             { name: "Luciana Alfonzo", text: "Una genia Yei! Recomiendo por su amabilidad y delicadeza en el trabajo, mis uñas siempre están divinas." }
         ];
 
